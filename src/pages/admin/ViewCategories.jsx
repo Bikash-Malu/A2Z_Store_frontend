@@ -5,6 +5,7 @@ import { toast } from "react-toastify"
 import Swal from "sweetalert2"
 import CategoryView from "../../components/CatetegoryView"
 import { deleteCategory, getCategories, updateCategory } from "../../services/CategoryService"
+import DefalutLayout from "../../components/admin/SideMenu"
 const ViewCategories = () => {
 
     const [categories, setCategories] = useState({
@@ -303,7 +304,7 @@ const ViewCategories = () => {
             </>
         )
     }
-    return (<div>
+    return (<DefalutLayout>
 
         {/* loader  */}
         <Container className="text-center p-3" hidden={!loading}>
@@ -358,7 +359,7 @@ const ViewCategories = () => {
         {
             selectedCategory ? modalUpdate() : ''
         }
-    </div>)
+    </DefalutLayout>)
 }
 
 export default ViewCategories

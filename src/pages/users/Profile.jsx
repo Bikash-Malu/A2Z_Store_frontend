@@ -254,7 +254,7 @@ const Profile = () => {
                                 hidden={!updateLoading}
                                 className="me-2"
                             />
-                            <span hidden={!updateLoading}>Updaing</span>
+                            <span hidden={!updateLoading}>Updating</span>
                             <span hidden={updateLoading}> Save Changes</span>
                         </Button>
                     </Modal.Footer>

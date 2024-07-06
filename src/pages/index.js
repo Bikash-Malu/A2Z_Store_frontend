@@ -18,7 +18,7 @@ function Index() {
         categoryId: "string",
         coverImage: "string",
         description: "string",
-        title: "Learn Code With Durgesh",
+        title: "Electronic Product",
       },
       description: "string",
       discountedPrice: 5000,
@@ -36,7 +36,7 @@ function Index() {
         categoryId: "string",
         coverImage: "string",
         description: "string",
-        title: "Learn Code With Durgesh",
+        title: "Electronic Product",
       },
       description: "string",
       discountedPrice: 5000,
@@ -54,7 +54,7 @@ function Index() {
         categoryId: "string",
         coverImage: "string",
         description: "string",
-        title: "Learn Code With Durgesh",
+        title: "Electronic Product",
       },
       description: "string",
       discountedPrice: 5000,
@@ -80,30 +80,11 @@ function Index() {
       buttonLink="/store"
     >
       <div className="my-4">{trendingProducts(products)}</div>
-      <div style={{ margin: "100px 0px" }}>
-        {infoWithImageInRightSection(
-          "https://random.imagecdn.app/500/150",
-          "Lorem ipsum dolor sit amet.",
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nisi assumenda asperiores repudiandae accusamus itaque ratione veritatis, inventore sunt laboriosam."
-        )}
-      </div>
-      <div style={{ margin: "100px 0px" }}>
-        {infoWithImageInLeftSection(
-          "https://random.imagecdn.app/500/150",
-          "Lorem ipsum dolor sit amet.",
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nisi assumenda asperiores repudiandae accusamus itaque ratione veritatis, inventore sunt laboriosam."
-        )}
-      </div>
+  
 
       <div className="my-4">{contactForm()}</div>
 
-      <div style={{ margin: "100px 0px" }}>
-        {infoWithImageInRightSection(
-          "https://random.imagecdn.app/500/150",
-          "Lorem ipsum dolor sit amet.",
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nisi assumenda asperiores repudiandae accusamus itaque ratione veritatis, inventore sunt laboriosam."
-        )}
-      </div>
+      
     </Base>
   );
 }

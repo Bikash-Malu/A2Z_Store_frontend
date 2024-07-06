@@ -1,96 +1,70 @@
-# A2Z eCommerce
+# Getting Started with Create React App
 
-A2Z eCommerce is a full-featured eCommerce application built using React, Redux Toolkit, and Tailwind CSS, following the MVC architecture. The application includes two panels: an admin panel and a user panel. Users can browse and order products, while admins can update and view ordered products.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Features
+## Available Scripts
 
-- **User Panel**:
-  - Browse products
-  - Order products
-  - View order history
+In the project directory, you can run:
 
-- **Admin Panel**:
-  - Update products
-  - View all ordered products
+### `npm start`
 
-## Technologies Used
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-- **Frontend**: React, Redux Toolkit, Tailwind CSS
-- **Architecture**: MVC (Model-View-Controller)
-- **State Management**: Redux Toolkit
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## Installation
+### `npm test`
 
-Follow these steps to set up the project on your local machine.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### Prerequisites
+### `npm run build`
 
-- Node.js and npm installed
-- Git installed
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### Clone the Repository
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-1. Clone the repository:
-    ```sh
-    git clone https://github.com/your-username/a2z-ecommerce.git
-    cd a2z-ecommerce
-    ```
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### Install Dependencies
+### `npm run eject`
 
-1. Navigate to the project directory:
-    ```sh
-    cd a2z-ecommerce
-    ```
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-2. Install frontend dependencies:
-    ```sh
-    npm install
-    ```
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-### Environment Setup
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-1. Create a `.env` file in the root directory.
-2. Add the necessary environment variables:
-    ```env
-    REACT_APP_API_URL=your_api_url
-    ```
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-### Running the Application
+## Learn More
 
-1. Start the development server:
-    ```sh
-    npm start
-    ```
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-2. Open your browser and go to `http://localhost:3000`.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-## Project Structure
+### Code Splitting
 
-- `src/`
-  - `components/` - Reusable components
-  - `features/` - Redux slices
-  - `pages/` - Admin and User pages
-  - `services/` - API services
-  - `styles/` - Tailwind CSS configurations
-  - `utils/` - Utility functions
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-## Usage
+### Analyzing the Bundle Size
 
-### User Panel
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-1. Register or log in to the application.
-2. Browse the product catalog.
-3. Add products to the cart and place an order.
-4. View your order history.
+### Making a Progressive Web App
 
-### Admin Panel
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-1. Log in to the admin panel.
-2. View all ordered products.
-3. Update product details and manage inventory.
+### Advanced Configuration
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-## Acknowledgments
+### Deployment
 
-- Thanks to the React, Redux Toolkit, and Tailwind CSS communities for their excellent documentation and support.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

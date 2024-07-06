@@ -5,6 +5,7 @@ import InfiniteScroll from "react-infinite-scroll-component"
 import SingleUserView from "../../components/SingleUserView"
 import { USER_PAGE_SIZE } from "../../services/helper.service"
 import { getAllUsers } from "../../services/user.service"
+import DefalutLayout from "../../components/admin/SideMenu"
 
 const AdminUsers = () => {
 
@@ -99,11 +100,11 @@ const AdminUsers = () => {
     }
 
     return (
-        <>
+        <DefalutLayout>
             {
                 userData && userView()
             }
-        </>
+        </DefalutLayout>
     )
 }
 

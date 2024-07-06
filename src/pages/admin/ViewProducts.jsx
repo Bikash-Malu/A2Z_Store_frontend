@@ -10,6 +10,7 @@ import ShowHtml from "../../components/ShowHtml"
 import { Editor } from "@tinymce/tinymce-react"
 import { useRef } from "react"
 import { getCategories } from "../../services/CategoryService"
+import DefalutLayout from "../../components/admin/SideMenu"
 
 const ViewProducts = () => {
 
@@ -639,7 +640,7 @@ const ViewProducts = () => {
 
                                 value={searchQuery}
                                 type="text" placeholder="Seach here" />
-                            <Button onClick={searchProducts} variant="outline-secondary">Search</Button>
+                            <Button onClick={searchProducts} variant="warning" className="btn-sm">Search</Button>
                         </InputGroup>
                     </Form.Group>
                     <Table className="" bordered hover responsive size="sm"
@@ -720,7 +721,7 @@ const ViewProducts = () => {
     }
 
     return (
-        <>
+        <DefalutLayout>
             <Container fluid>
 
                 <Row>
@@ -745,7 +746,7 @@ const ViewProducts = () => {
             }
 
 
-        </>
+        </DefalutLayout>
     )
 }
 

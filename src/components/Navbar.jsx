@@ -16,6 +16,7 @@ const CustomNavbar = () => {
     const { cart, setCart } = useContext(CartContext)
     const doLogout = () => {
         userContext.logout()
+        window.location.reload()
     }
     return (
         <Navbar className='bg-navbar-color' collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -25,7 +26,7 @@ const CustomNavbar = () => {
 
                     <img alt='logo' src={logo} height={25} width={25} />
 
-                    <span className='ms-1 mt-1'>ElectroStore</span>
+                    <span className='ms-2 mt-1'>么❷乙 STORE</span>
 
                 </Navbar.Brand>
 
@@ -36,18 +37,7 @@ const CustomNavbar = () => {
                     <Nav className="m-auto">
                         <Nav.Link as={NavLink} to="/services">Features</Nav.Link>
 
-                        {/* <NavDropdown title="Categories" id="collasible-nav-dropdown">
-
-                            <NavDropdown.Item href="#action/3.1">Branded Phones</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">
-                                Smart TVs
-                            </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Laptops</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">
-                                More
-                            </NavDropdown.Item>
-                        </NavDropdown> */}
+            
 
                         <Nav.Link as={NavLink} to="/about">About</Nav.Link>
                         <Nav.Link as={NavLink} to="/contact">Contact Us</Nav.Link>
@@ -67,9 +57,9 @@ const CustomNavbar = () => {
                                             <Nav.Link as={NavLink} to="/admin/home" >AdminDashboard</Nav.Link>
                                         </>
                                     )}
-                                    <Nav.Link as={NavLink} to={`/users/profile/${userContext.userData.user.userId}`} >{userContext.userData.user.email}</Nav.Link>
+                                    <Nav.Link as={NavLink} to={`/users/profile/${userContext.userData.user.userId}`} >{userContext.userData.user.name}</Nav.Link>
                                     <Nav.Link as={NavLink} to="/users/orders" >Orders</Nav.Link>
-                                    <Nav.Link onClick={doLogout}>Logout</Nav.Link>
+                                    <Nav.Link data-bs-toggle="modal" data-bs-target="#exampleModal">Logout</Nav.Link>
                                 </>
                                 : (
                                     <>
@@ -81,6 +71,23 @@ const CustomNavbar = () => {
 
 
                     </Nav>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h3 class="modal-title fs-5" id="exampleModalLabel" className='text-center'>Logout Popup</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+    Are you sure want to logout???
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger" onClick={doLogout}>Logout here</button>
+      </div>
+    </div>
+  </div>
+</div>
                 </Navbar.Collapse>
             </Container>
         </Navbar >

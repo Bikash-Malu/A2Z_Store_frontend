@@ -4,6 +4,7 @@ import { toast } from "react-toastify"
 import { addProductImage, createProductInCategory, createProductWithOutCategory } from "../../services/product.service"
 import { getCategories } from '../../services/CategoryService'
 import { Editor } from '@tinymce/tinymce-react'
+import DefalutLayout from "../../components/admin/SideMenu"
 const AddProduct = () => {
 
     const [product, setProduct] = useState({
@@ -173,19 +174,12 @@ const AddProduct = () => {
                     console.log(error)
                     toast.error("Error in creating product !! check product details")
                 })
-
         }
-
-
-
-
     }
-
-
 
     const formView = () => {
         return (
-            <>
+            <div >
 
                 {/* {JSON.stringify(product)} */}
 
@@ -216,18 +210,7 @@ const AddProduct = () => {
 
                                 <Form.Label>Product Description</Form.Label>
 
-                                {/* <Form.Control
-                                    as={'textarea'}
-                                    rows={6}
-                                    placeholder="Enter here"
-
-                                    onChange={(event) => setProduct({
-                                        ...product,
-                                        description: event.target.value
-                                    })}
-
-                                    value={product.description}
-                                /> */}
+                        
 
                                 <Editor
 
@@ -416,16 +399,16 @@ const AddProduct = () => {
                     </Card.Body>
                 </Card>
 
-            </>
+            </div>
 
         )
     }
 
-    return (<div>
+    return (<DefalutLayout>
         {
             formView()
         }
-    </div>)
+    </DefalutLayout>)
 }
 
 export default AddProduct

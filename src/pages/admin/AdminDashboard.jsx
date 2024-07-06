@@ -17,7 +17,7 @@ const AdminDashboard = () => {
                         <Col md={{
                             span: 2
                         }} className="">
-                            <SideMenu />
+                            {/* <SideMenu /> */}
                         </Col>
                         <Col md={10} className="ps-3 pt-2">
                             <Outlet />

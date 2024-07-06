@@ -3,6 +3,7 @@ import { useState } from "react"
 import { Button, Card, Container, Form, FormGroup, Spinner } from "react-bootstrap"
 import { toast } from "react-toastify"
 import { addCategory } from "../../services/CategoryService"
+import DefalutLayout from "../../components/admin/SideMenu"
 
 const AddCategory = () => {
 
@@ -68,7 +69,7 @@ const AddCategory = () => {
     }
 
     return (
-        <>
+        <DefalutLayout>
             <Container fluid>
 
 
@@ -136,7 +137,7 @@ const AddCategory = () => {
 
 
             </Container>
-        </>
+        </DefalutLayout>
     )
 }
 

@@ -116,8 +116,8 @@ const Login = () => {
 
                 <Row>
                     <Col md={{
-                        span: 8,
-                        offset: 2
+                        span: 6,
+                        offset: 3
                     }}>
 
 
@@ -188,7 +188,7 @@ const Login = () => {
 
                                     <Container className="text-center">
 
-                                        <Button type="submit" className="" variant="success" disabled={loading}>
+                                        <Button type="submit" className="btn-sm" variant="success" disabled={loading}>
                                             <Spinner
                                                 animation="border"
                                                 size="sm"
@@ -202,7 +202,7 @@ const Login = () => {
 
                                         </Button>
 
-                                        <Button onClick={handleReset} className="ms-2" variant="danger">Reset</Button>
+                                        <Button onClick={handleReset} className="ms-2 btn-sm" variant="danger">Reset</Button>
                                     </Container>
 
                                 </Form>

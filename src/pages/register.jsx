@@ -4,6 +4,7 @@ import logo from "../assets/logo.png"
 import { useState } from "react"
 import { toast } from "react-toastify"
 import { registerUser } from "../services/user.service"
+import { Link } from "react-router-dom"
 const Register = () => {
 
 
@@ -64,29 +65,29 @@ const Register = () => {
         console.log(data)
 
         //validate client side 
-        if (data.name == undefined || data.name.trim() == '') {
+        if (data.name === undefined || data.name.trim() === '') {
             toast.error("Name is required !!")
             return
         }
 
-        if (data.email == undefined || data.email.trim() == '') {
+        if (data.email === undefined || data.email.trim() === '') {
             toast.error("Email is required !!")
             return
         }
 
         //basics...
 
-        if (data.password == undefined || data.password.trim() == '') {
+        if (data.password === undefined || data.password.trim() === '') {
             toast.error("Password is required !!")
             return
         }
 
-        if (data.confirmPassword == undefined || data.confirmPassword.trim() == '') {
+        if (data.confirmPassword === undefined || data.confirmPassword.trim() === '') {
             toast.error("Confirm Password is required !!")
             return
         }
 
-        if (data.password != data.confirmPassword) {
+        if (data.password !== data.confirmPassword) {
             toast.error("Password and Confirm password not matched !!")
             return
         }
@@ -123,19 +124,19 @@ const Register = () => {
 
             <Container >
 
-                {/* Single Row==> 12 grids (col) */}
+                {/* Single Row===> 12 grids (col) */}
 
                 <Row>
 
 
                     {/* {JSON.stringify(data)} */}
 
-                    <Col sm={{ span: 8, offset: 2 }} >
+                    <Col sm={{ span: 6, offset: 3 }} >
 
-                        <Card className="my-3 border-0 shadow p-4" style={
+                        <Card className=" border-0 shadow p-4" style={
                             {
                                 position: 'relative',
-                                top: -60
+                                top: -50
 
                             }
                         } >
@@ -233,7 +234,7 @@ const Register = () => {
                                                 type={'radio'}
                                                 id={`gender`}
                                                 value={'male'}
-                                                checked={data.gender == 'male'}
+                                                checked={data.gender === 'male'}
                                                 onChange={(event) => handleChange(event, 'gender')}
                                             />
 
@@ -244,7 +245,7 @@ const Register = () => {
                                                 type={'radio'}
                                                 id={`gender`}
                                                 value={'female'}
-                                                checked={data.gender == 'female'}
+                                                checked={data.gender === 'female'}
                                                 onChange={(event) => handleChange(event, 'gender')}
                                             />
 
@@ -260,6 +261,7 @@ const Register = () => {
                                             as={'textarea'} rows="6" placeholder="write here"
                                             onChange={(event) => handleChange(event, 'about')}
                                             value={data.about}
+                                            style={{resize:'none'}}
                                             isInvalid={errorData.errorData?.response?.data?.about}
                                         />
                                         <Form.Control.Feedback type="invalid">{errorData.errorData?.response?.data?.about}</Form.Control.Feedback>
@@ -269,13 +271,13 @@ const Register = () => {
 
 
                                     <Container>
-                                        <p className="text-center">Already register !   <a href="">Login </a></p>
+                                        <p className="text-center">Already register ! <Link to={'/login'}>Login</Link></p>
                                     </Container>
 
                                     <Container className="text-center">
                                         <Button
                                             type="submit"
-                                            className="text-uppercase"
+                                            className="text-uppercase btn-sm"
                                             variant="success"
                                             disabled={loading}
                                         >
@@ -284,14 +286,14 @@ const Register = () => {
                                             <Spinner
                                                 animation="border"
                                                 size="sm"
-                                                className="me-2"
+                                                className="me-2 "
                                                 hidden={!loading}
                                             />
                                             <span hidden={!loading}>Wait...</span>
                                             <span hidden={loading}>Register</span>
 
                                         </Button>
-                                        <Button className="ms-2 text-uppercase" variant="danger" onClick={clearData}>Reset</Button>
+                                        <Button className="ms-2 text-uppercase btn-sm" variant="danger" onClick={clearData}>Reset</Button>
 
                                     </Container>
 

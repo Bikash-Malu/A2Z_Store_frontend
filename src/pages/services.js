@@ -10,7 +10,24 @@ function Services() {
       buttonType="warning"
       buttonText="Home"
     >
-      <div>This is Services page</div>
+        <div class="container my-4">
+    <div class="row">
+      <div class="col-lg-3">
+        <h3>Categories</h3>
+        <ul class="list-group">
+          <li class="list-group-item">Laptops</li>
+          <li class="list-group-item">Smartphones</li>
+          <li class="list-group-item">Tablets</li>
+          <li class="list-group-item">Accessories</li>
+        </ul>
+      </div>
+      <div class="col-lg-9">
+        <h1>Welcome to Electronic Store</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec ligula ac odio aliquam vestibulum. Integer quis eros justo. Sed viverra eu nunc id malesuada. Quisque vehicula pharetra urna non egestas. Nullam ac augue sit amet magna malesuada malesuada. Integer lacinia urna vel sapien sodales dictum. Quisque lacinia nisi ac odio varius, non dictum est hendrerit.</p>
+        <p>Explore our wide range of electronic products and accessories.</p>
+      </div>
+    </div>
+  </div>
     </Base>
   );
 }

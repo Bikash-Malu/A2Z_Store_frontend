@@ -5,9 +5,10 @@ import { MdOutlineCategory } from 'react-icons/md'
 import { BsBorderStyle } from 'react-icons/bs'
 import { FaUserSecret } from 'react-icons/fa'
 import DashboardCardView from "../../components/DashboardCardView"
+import DefalutLayout from "../../components/admin/SideMenu"
 const AdminHome = () => {
     return (
-
+<DefalutLayout>
         <Container>
 
             <Row>
@@ -26,10 +27,13 @@ const AdminHome = () => {
                             <p className="text-muted">Customize dashboard for admin , to add categories, to add  products, to view categories, to view products, manage orders, manager users and much more.</p>
                             <p>Start managing products</p>
                             <Container className="d-grid gap-3">
-                                <Button as={Link} to={'/admin/categories'} className="" variant="outline-secondary">Start Managing Categories</Button>
-                                <Button as={Link} to={'/admin/products'} className="" variant="outline-secondary">Start Managing Products</Button>
-                                <Button as={Link} to={'/admin/users'} className="" variant="outline-secondary">Start Managing Users</Button>
-                                <Button as={Link} to={'/admin/orders'} className="" variant="outline-secondary">Start Managing Orders</Button>
+                                <Button as={Link} to={'/admin/categories'} className="text-dark" variant="outline-primary" >Start Managing Categories</Button>
+                                <Button as={Link} to={'/admin/products'} className="text-dark" variant="outline-primary">Start Managing Products</Button>
+                                <Button as={Link} to={'/admin/users'} className="text-dark" variant="outline-primary">Start Managing Users</Button>
+                                <Button as={Link} to={'/admin/orders'} className="text-dark" variant="outline-primary">Start Managing Orders</Button>
+                                <Button as={Link} to={'/admin/add-category'} className="text-dark" variant="outline-primary" >Add Categories</Button>
+                                <Button as={Link} to={'/admin/add-product'} className="text-dark" variant="outline-primary">Add Products</Button>
+                                
                             </Container>
                         </Card.Body>
 
@@ -93,6 +97,7 @@ const AdminHome = () => {
             </Row>
 
         </Container>
+        </DefalutLayout>
 
     )
 }

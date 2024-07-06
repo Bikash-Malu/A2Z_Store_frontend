@@ -29,7 +29,6 @@ const Base = ({
                     {buttonEnabled && <Button as={NavLink} to={buttonLink} variant={buttonType} >{buttonText}</Button>}
 
                 </div>
-
             </Container>
 
             {children}

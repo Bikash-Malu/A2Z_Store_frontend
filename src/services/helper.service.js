@@ -1,5 +1,5 @@
-export const BASE_URL = `https://a2z-backend.onrender.com/`;
-export const PRODUCT_PAGE_SIZE = 10;
+export const BASE_URL = `https://a2z-backend.onrender.com`;
+export const PRODUCT_PAGE_SIZE = 5;
 export const ADMIN_ORDER_PAGE_SIZE = 10;
 export const USER_PAGE_SIZE = 10;
 export const SOTRE_PAGE_PRODUCT_SIZE = 9;
@@ -18,14 +18,6 @@ export const formatDate = (timeInLongs) => {
   if (!timeInLongs) {
     return null;
   }
-  //   var options = {
-  //     weekday: "long",
-  //     year: "numeric",
-  //     month: "long",
-  //     day: "numeric",
-  //   };
   const date = new Date(timeInLongs);
-  // return date.toLocaleDateString("hi-IN", options);
-  // return date.toLocaleString("en-US", options);
   return date.toLocaleString();
 };
