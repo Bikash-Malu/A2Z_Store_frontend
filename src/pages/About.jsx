@@ -1,8 +1,11 @@
 import Base from "../components/Base";
 
-function About() {
+import React from 'react'
+
+const About = () => {
   return (
-    <Base title="Electro Store / About Us" description={null}>
+    <div>
+        <Base title="Electro Store / About Us" description={null}>
       <div>  <div class="jumbotron jumbotron-fluid bg-light text-center">
         <div class="container">
             <h1 class="display-4">About Us</h1>
@@ -27,7 +30,8 @@ function About() {
     </section>
 </div>
     </Base>
-  );
+    </div>
+  )
 }
 
-export default About;
+export default About

@@ -1,5 +1,5 @@
 import Base from "../components/Base";
-
+import React from 'react'
 function Services() {
   return (
     <Base

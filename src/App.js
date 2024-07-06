@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import Index from "./pages/Index";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Cart from "./pages/Cart";
@@ -9,7 +10,7 @@ import AboutUser from "./pages/users/AboutUser";
 import { Container, Navbar } from "react-bootstrap";
 import CustomNavbar from "./components/Navbar";
 import Contact from "./pages/Contact";
-import { ToastContainer} from "react-toastify";
+import { ToastContainer, Zoom, Flip, toast } from "react-toastify";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Home from "./pages/users/Home";
@@ -45,7 +46,7 @@ function App() {
           <CustomNavbar />
           <Loading show={loading} />
           <Routes>
-           
+            <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<Contact />} />

@@ -1,6 +1,6 @@
 import Base from "../components/Base";
 import { contactForm } from "./HomePageComponents";
-
+import React from 'react'
 const Contact = () => {
   return (
     <Base title="Electro Store / Contact Us" description={null}>

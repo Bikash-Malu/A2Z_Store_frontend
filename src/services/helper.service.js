@@ -1,4 +1,4 @@
-export const BASE_URL = `https://a2z-backend.onrender.com`;
+export const BASE_URL =`https://a2z-backend.onrender.com`;
 export const PRODUCT_PAGE_SIZE = 5;
 export const ADMIN_ORDER_PAGE_SIZE = 10;
 export const USER_PAGE_SIZE = 10;

@@ -7,6 +7,7 @@ import {
   Form,
   Row,
 } from "react-bootstrap";
+import React from 'react'
 import { useContext, useState } from "react";
 import CartContext from "../context/CartContext";
 import UserContext from "../context/UserContext";

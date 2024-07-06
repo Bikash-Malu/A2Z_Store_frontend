@@ -1,3 +1,4 @@
+import React from 'react'
 import { Button, Card, Col, Container, Form, Row, Spinner } from "react-bootstrap"
 import Base from "../components/Base"
 import logo from "../assets/logo.png"
