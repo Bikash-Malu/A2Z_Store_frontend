@@ -1,6 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Index from "./pages/Index";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Cart from "./pages/Cart";
@@ -46,7 +45,7 @@ function App() {
           <CustomNavbar />
           <Loading show={loading} />
           <Routes>
-            <Route path="/" element={<Index />} />
+           
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<Contact />} />
