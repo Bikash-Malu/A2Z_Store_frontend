@@ -9,7 +9,7 @@ import AboutUser from "./pages/users/AboutUser";
 import { Container, Navbar } from "react-bootstrap";
 import CustomNavbar from "./components/Navbar";
 import Contact from "./pages/Contact";
-import { ToastContainer, Zoom, Flip, toast } from "react-toastify";
+import { ToastContainer} from "react-toastify";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Home from "./pages/users/Home";
